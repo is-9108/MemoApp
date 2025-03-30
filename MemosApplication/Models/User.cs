@@ -21,5 +21,8 @@ namespace MemosApplication.Models
         [DisplayName("パスワード")]
         public string Password { get; set; }
         public virtual ICollection<Role> Roles { get; set; }
+        [NotMapped]
+        [DisplayName("ロール")]
+        public List<int> RoleIds { get; set; }
     }
 }
