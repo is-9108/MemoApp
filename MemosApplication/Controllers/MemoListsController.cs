@@ -10,6 +10,7 @@ using MemosApplication.Models;
 
 namespace MemosApplication.Controllers
 {
+    [Authorize]
     public class MemoListsController : Controller
     {
         private MemoListsContext db = new MemoListsContext();
